@@ -74,20 +74,38 @@
         /* margin-left: 500px;
         margin-top: 200px;
         margin: 10px; */
+/* UNIVERSAL SELECTOR:- */
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
 
-        .box{
-            height: 200px;
-            border: 10px solid black;
-            width: 200px;
-        }
-        .box2{
-            height: 200px;
-            width: 200px;
-            border: 10px solid red;
-        }
-        #maindiv{
+        #navbar{
+
             display: flex;
-            /* display: none; */
-            justify-content:space-around;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            font-size: 30px;
+
+        }
+
+        #navbar li a{
+
+            text-decoration: none;
+            color: red;
+        }
+
+        #boxes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #boxes div{
+
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
         }
